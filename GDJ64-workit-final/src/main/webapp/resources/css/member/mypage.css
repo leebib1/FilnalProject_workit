@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.profile-info{
+	width: 400px;
+}
+.profile-info>.right-container{
+	margin: 30px;
+}
+.main-section{
+	margin: 10px;
+}
+#mypage-profile{
+	display: flex;
+	justify-content: center;
+	height: 280px;
+	width: 230px;
+	border-radius: 10px;
+	margin: 10px;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+#profile-form{
+	margin-left: 70px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+#mypage-name{
+	font-weight: bolder;
+	margin-left: 10px;
+}
+.mypage-simple-info{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.mypage-section{
+	margin: var(--seciton-margin);
+	margin: 15px 0px;
+}
+.mypage-update-div>div{
+	display: flex;
+}
+.mypage-update>span{
+	width: 50px;
+	padding: 10px;
+}
+.mypage-update>input{
+	height: 30px;
+	width: 500px;
+	margin: 10px 0px;
+}
+input[type="reset"]{
+	height: 38px;
+	width: 100px;
+}
+.update-result-tb{
+	padding: 10px 0px;
+	width: 100%;
+	text-align: center;
+}
+hr{
+	margin: 5px 0px;
+}
+h4, h2{
+	margin: 10px 0px;
+}
+.tb-content{
+	width: 200px;
+}
+#profile-input{
+	display: none;
+}
+input[type="button"]{
+	height: 38px;
+	width: 100px;
+}

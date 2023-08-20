@@ -1,0 +1,52 @@
+@charset "EUC-KR";
+
+
+.reject {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reject .bg-reject {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modalBox-reject {
+	position: absolute;
+	background-color: #fff;
+	width: 500px;
+	height: 200px;
+	padding: 15px;
+}
+
+.hidden-reject {
+          display: none;
+        } 
+        
+
+#reject-write-button{
+	background-color:red;
+	margin-top: 30px;  
+	margin-left:160px;
+}
+	
+#rejectTitle{
+	text-align: center;
+	line-height:70px;
+}
+
+#rejectContent{
+	margin-top: 20px;
+}
+
+#rejectContentInput{
+	width: 480px;
+	
+}

@@ -1,0 +1,288 @@
+@charset "UTF-8";
+/* 전체페이지 스타일 */
+* {
+	margin: 0;
+    padding: 0;
+    color: #555555;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Spoqa Han Sans';
+}
+/* 폰트 임의로 넣었습니다 변경하고 싶으시면 변경해주세요 ! */
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+.spoka * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+
+:root {
+  --section-radius: 1.5rem;
+  --img-radius: 1rem;
+  --btn-radius: 0.5rem;
+  --main-color-lt:#BDDFFF; /* 밝은 하늘색 버튼 */
+  --main-color-bl:#96C1E8; /* 하늘색 버튼 */
+  --main-color-dk:#5F90CB; /* 어두운 하늘색 버튼 */
+  --main-col-dk:#555555; /* border 컬러*/
+  --main-disabled : #CECECE;/*  */
+  --border-color :#A3A3A3; /* line, border  연한 컬러*/
+  --msg-color-blue : #DAEDFA; /* 아주 밝은 블루 */
+  
+  --font-small:0.9rem; /* button 폰트 사이즈 */
+  --btn-padding:0.4rem 0.6rem; /* button padding 값 */
+  --hr-style:0.5px solid #A3A3A3; /* 제목 아래 선 그을 때 자주 사용함 (제가 사용해서 뒀어요) */
+  
+  --section-center:0 auto;
+  
+  --seciton-margin:2rem auto; /* 70% 적용된 섹션이 중앙 정렬 됩니다 */
+  --section-inner-margin: 1.5rem 3rem;
+  --box-shadow: 2px 2px 4px 2px rgba(201, 199, 199, 0.2);
+}
+/* 사용법
+적용하고 싶은 영역 
+	{
+	border-radius:var(--btn-radius);
+	} 
+*/
+/* width 90% */
+.max90per {
+    max-width: 1920px;
+	width: 92.5%;
+	margin: 0 auto;
+}
+
+/* width 100% */
+.max100per{
+    min-width: 100vw;
+	width:100%;
+}
+/* input, select, button outline 초기화  */
+input, select, input:focus, select:focus, button {
+	outline: none;
+	border: none;
+}
+
+input, select {
+	width: 10rem;
+	height: 36px;
+	border-radius: 0.5rem;
+	padding: var(--btn-padding);
+	border: 1px solid #A3A3A3;
+	font-size: var(--font-small);
+}
+input:focus, select:focus {
+	border: 1px solid #A3A3A3;
+}
+
+button {
+	padding : 0.6rem 2rem;
+	background-color: var(--main-color-bl);
+	border-radius: var(--btn-radius);
+	font-weight: 700;
+}
+button:hover {
+	background-color: var(--main-color-dk);
+	color: #FFFFFF;
+}
+/* title 클래스 적용시 아래마진 적 */
+.title {
+	margin-bottom: 1.5rem;
+}
+
+/* section 내의 영역 (shadow, border-radius) */
+.section-shadow {
+	margin-top: 1.5rem;
+	border-radius: var(--section-radius);
+	box-shadow: var(--box-shadow);
+	outline: 0 none;
+	border: 0 none;
+}
+
+/* 헤더 */
+header {
+	width: 100%;
+	height: 80px;
+	background-color: #FFFFFF;
+	position: relative;
+    z-index: 11;
+	box-shadow: var(--box-shadow);
+}
+/*헤더 내부 영역 설정*/
+.header-container {
+	margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*헤더 영역 내부 버튼*/
+.header-button-container{
+	width: 30%;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 헤더 아이콘정렬 */
+.header_icon_container{
+	display: flex;
+}
+/* 헤더 아이콘 여백 */
+.header_icon_container>img, .header_icon_container>div {
+	width: 42px;
+    padding-left: 2rem;
+}
+
+.header-member{
+	width: 40%;
+	
+}
+/* header 사원 프로필, 이름 */
+.header-member a {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* 사원 프로필 이미지 */
+.header-member img{
+	width: 48px;
+	height: 48px;
+}
+/* 사원 프로필 정보 */
+.header-member span{
+	display: flex;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/*섹션*/
+section {
+    display: flex;
+    background-color: #F8FCFF;
+    height: auto;
+    min-height: 800px;
+}
+
+/* 헤더 아래 오른쪽 영역 */ 
+.main-section{
+	background-color: #FFFFFF;
+	width: 100%;
+	margin: var(--section-inner-margin);
+}
+/* 헤더 아래 오른쪽 영역 inner */
+.right-container {
+	margin: var(--section-inner-margin); 
+	/*border: 1px solid black;*/ /* 내부 text 영역 확인 가이드라인 */
+}
+
+/* 헤더 아래 왼쪽 영역 */ 
+.side-nav-container{
+	width: 340px;
+	background-color: #FFFFFF;
+	margin: 1.5rem 0 ;
+}
+/* 헤더 아래 - 메뉴 영역 */ 
+/* 타이틀 */
+.side-nav{
+	margin: 1.5rem 3rem 1.5rem 4rem;
+}
+/* 메뉴 영역 */
+.side-menu-container {
+	width: 100%;
+	margin-top: 1rem;
+}
+.side-menu-container div{
+	width: 100%;
+	height: auto;
+	border-bottom: 0.2px solid #F0F0F0;
+}
+.side-menu-container div a{
+	display: flex;
+	justify-content: space-between;
+	padding: 0.7rem 3rem 0.7rem 4rem;
+	align-items: center;
+}
+.side-menu-container div:first-child{
+	border-top: 0.2px solid #F0F0F0;
+}
+.side-menu-container div a:hover {
+	background-color: var(--msg-color-blue);
+}
+.side-menu-container div span{
+	width: 100%;
+	text-align: left;
+	margin-left: 20%;
+}
+
+/* 페이지네이션 스타일 - 중앙 정렬 */
+div.pageBar{
+	width: 50%;
+	margin: 1rem auto;
+}
+/* 페이지네이션 스타일 */
+.pagination {
+	width: 300px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	
+}
+.pagination>li{
+	text-align: center;
+	padding: 0.5rem;
+	width: 70px;
+	border: 2px solid #BDDFFF;
+	border-left: 0;
+}
+.pagination>li:first-child, .pagination>li:last-child {
+	border: 2px solid #BDDFFF;
+	width: 100px;
+}
+.pagination>li:first-child{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.pagination>li:last-child{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.pagination>li:last-child {
+	border-left: 0;
+}
+.pagination .disabled {
+    /*포인터 안되게 막기 : none */
+    pointer-events : none;
+}
+.active, .pagination li:hover{
+	 background-color: var(—main-color-lt);
+ }
+.pagination .disabled a {
+    color: var(—main-disabled);
+}
+.page-link:hover{
+	background-color: var(--main-color-lt);
+	color: var(--main-col-dk);
+	font-weight: bolder;
+}
+#chat-notification {
+	background-image: url('../../images/common/chat.svg');
+    position: relative;
+    height : 40px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.chat-num {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color:var(--main-color-dk);
+    border-radius: 15px;
+    display: inline-block;
+    color : white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    box-shadow: var(--box-shadow);
+}
+.hidden {display: none;}
